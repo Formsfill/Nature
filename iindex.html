@@ -1,22 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FrostVeil SMP Event Registration</title>
+
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg,#000,#0f2027,#1a1a1a,#203a43);
+    background-size:400% 400%;
+    animation:gradientBG 15s ease infinite;
+    color:white;
+}
+@keyframes gradientBG{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+header {
+    padding: 100px 20px 40px;
+    text-align: center;
+    color: #00ffcc;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: rgba(0,0,0,0.85);
+    padding: 30px;
+    border: 2px solid #00ffcc;
+    border-radius: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #00ffcc;
+    border-radius: 8px;
+    background: #111;
+    color: white;
+    font-size: 1em;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #00ffcc;
+    color: black;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 30px;
+    background: black;
+    opacity: 0.7;
+}
+</style>
 </head>
 <body>
-    
-    
-    <center>
-<div>
-    <h1> Nature</h1>
-    
-    <img src="image.jpg"  height="200" width="450">
-    <br><br>
-    <p> Nature is everything around us that makes life possible and beautiful. It includes the air we breathe, the weather we feel, the plants, animals, and everything we see outside. We call it "Mother Nature" because, like a mother, it provides us with everything we need, such as food, clothes, and shelter. When we step outside, the sunlight, trees, flowers, and cool breeze remind us of how amazing nature is.</p>
-    </div>
+
+<header>
+    <h1>📝 FrostVeil SMP Event Registration</h1>
+    <p>Register for upcoming events & competitions!</p>
+</header>
+
+<form action="https://formspree.io/f/meelylnj" method="POST">
+
+    <input type="hidden" name="form_type" value="Event Registration">
+
+    <input type="text" name="minecraft_username" 
+           placeholder="Minecraft Username" required>
+
+    <input type="text" name="discord_username" 
+           placeholder="Discord Username (example: user_1234)" required>
+
+    <input type="text" name="event_name" 
+           placeholder="Event Name (example: PvP Tournament)" required>
+
+    <input type="text" name="team_name" 
+           placeholder="Team / Clan Name (Optional)">
+
+    <textarea name="notes" rows="4" 
+              placeholder="Extra Notes (Optional)"></textarea>
+
+    <button type="submit">📩 Submit Registration</button>
+
+</form>
+
+<footer>
+© 2026 FrostVeil SMP | Not affiliated with Mojang
+</footer>
 
 </body>
 </html>
